@@ -1,0 +1,24 @@
+.statistics {
+  background: white;
+  max-width: 400px;
+}
+.title {
+  text-align: center;
+  padding: 30px;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+.statList {
+  display: flex;
+}
+.item {
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding: 15px 0;
+}
+.percentage {
+  display: block;
+  margin-top: 10px;
+  font-size: 18px;
+}

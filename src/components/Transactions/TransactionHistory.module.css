@@ -1,0 +1,25 @@
+.transactionHistory {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border: 1px solid white;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.title tr {
+  background-color: rgb(64, 165, 224);
+  color: white;
+}
+.title th {
+  padding: 10px 90px;
+}
+.conten tr {
+  color: rgb(158, 154, 167);
+  text-align: center;
+}
+.conten tr:nth-child(2n) {
+  background-color: rgb(255, 242, 242);
+}
+.conten td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
