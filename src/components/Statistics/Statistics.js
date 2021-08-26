@@ -1,11 +1,12 @@
 import React from 'react';
-import style from './Statistics.module.css'
+import style from './Statistics.module.css';
+import PropTypes from 'prop-types';
 
 const color = ["red", "blue", "teal", "green", "pink"];
 const Statistics = ({ title, stats }) => {
    return (
              <section className={style.statistics}>
-           <h2 className={style.title}>Upload stats</h2>
+           <h2 className={style.title}>{title}</h2>
 
            <ul className={style.statList}>
                {stats.map((stat, index) => 
@@ -18,6 +19,18 @@ const Statistics = ({ title, stats }) => {
                )}
             </ul>
         </section>
-    )
-}
+    );
+};
+
+Statistics.propTypes = {
+    title: PropTypes.string,
+    id: PropTypes.string.isRequired,
+    label: PropTypes.string.isRequired,
+    percentage: PropTypes.number.isRequired,
+  };
+
+
+
+
+
 export default Statistics

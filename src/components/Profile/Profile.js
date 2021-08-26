@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import style from './Profile.module.css';
 
 const Profile = ({ avatar, name, tag, location, followers, views,likes}) => {
@@ -32,4 +33,26 @@ const Profile = ({ avatar, name, tag, location, followers, views,likes}) => {
 </div>
 )
 }
-export default Profile
+
+Profile.propTypes = {
+  avatar: PropTypes.string,
+  name: PropTypes.string,
+  tag: PropTypes.string,
+  location: PropTypes.string,
+  stats: PropTypes.objectOf(PropTypes.number),
+};
+
+Profile.defaultProps = {
+  name: 'User name',
+  tag: '@User tag',
+  location: 'User location',
+  avatar: 'https://www.flaticon.com/svg/static/icons/svg/3784/3784184.svg',
+  stats: {
+    followers: '0',
+    views: '0',
+    likes: '0',
+  },
+};
+
+
+export default Profile;
