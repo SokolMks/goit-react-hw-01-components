@@ -10,20 +10,20 @@ import transactions from './data/transactions.json';
 function App() {
   return(
     <>
-    <Profile
-      name={user.name}
-      tag={user.tag} 
-      location={user.location} 
-      avatar={user.avatar}
-      stats={user.stats}
-     />
+      <Profile
+        name={user.name}
+        tag={user.tag} 
+        location={user.location} 
+        avatar={user.avatar}
+        stats={user.stats}
+      />
 
-     <Statistics title="Upload stats"
-     stats={statisticalData} />
-     <FriendList friends={friends} />
+      <Statistics title="Upload stats"
+        stats={statisticalData} />
+      <FriendList friends={friends} />
      
-     <TransactionHistory items={transactions}/>
-     </>
+      <TransactionHistory items={transactions}/>
+    </>
   );
 }
 

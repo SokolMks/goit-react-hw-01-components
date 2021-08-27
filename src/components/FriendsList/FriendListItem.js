@@ -3,13 +3,11 @@ import style from './FriendList.module.css'
 
 const FriendListItem = ({ friends }) => {
   return (
-          friends.map(friend => (
-            <li className={style.item} key={friend.id}>
-              <span className={ friend.isOnline  ? style.status : style.offline} />
-              <img className={style.avatar} src={friend.avatar} alt={friend.name} width="48" />
-              <p className="name">{friend.name}</p>
-            </li>
-      ))
+          <li className={style.item} key={friend.id}>
+            <span className={ friend.isOnline  ? style.status : style.offline} />
+            <img className={style.avatar} src={friend.avatar} alt={friend.name} width="48" />
+            <p className="name">{friend.name}</p>
+          </li>
   );
 };
 
